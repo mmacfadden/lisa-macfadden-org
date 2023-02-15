@@ -1,0 +1,7 @@
+<footer>
+  <div class="container">
+  <a href="{{ .Site.Home.Permalink }}">
+    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+  </a>
+  </div>
+</footer>

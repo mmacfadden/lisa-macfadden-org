@@ -1,0 +1,13 @@
+<div>
+  <div>
+    {{with .CurrentSection.Title }}<span>{{ . }}</span>{{end}}
+    <h1>
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h1>
+    <div>
+      {{ .Summary }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+  <section>
+    <h1>
+      {{ .Title }}
+    </h1>
+    <div> 
+      <i class="fa-regular fa-calendar"></i>
+      {{ .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) }}
+    </div>
+  </section>
+  <section>
+    {{ .Content }}
+  </section>
+</article>
+{{ end }}
